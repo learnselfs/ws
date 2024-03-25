@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <!-- Import style -->
+    <link href="/static/css/rest.css" rel="stylesheet"/>
+    <script src="/static/js/vue.global.js"></script>
+    <!-- 会使用最新版本，你最好指定一个版本 -->
+    <script src="/static/js/naive-ui.js"></script>
+
+    <title> [[.title]]</title>
+
+</head>
+<body>
+    <div id="app">
+        <n-layout>
+            <n-layout-header>
+                [[ template "header.html" .]]
+            </n-layout-header>
+            <n-layout has-sider>
+
+                <n-layout-sider>
+                    [[ template "sider.html" .]]
+                </n-layout-sider>
+
+          <n-layout>
+                <n-layout-content>
+                    [[ template "content.html" .]]
+                </n-layout-content>
+
+                <n-layout-footer>
+                    [[ template "footer.html" .]]
+
+                </n-layout-footer>
+          </n-layout>
+      </n-layout>
+    </n-layout>
+
+    </div>
+    <link href="/static/css/main.css" rel="stylesheet"/>
+    <script src="/static/js/main.js"></script>
+        </body>
+        </html>

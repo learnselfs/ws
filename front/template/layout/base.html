@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <!-- Import style -->
+    <link href="/static/css/rest.css" rel="stylesheet"/>
+    <link href="/static/css/layui.css" rel="stylesheet"/>
+    <script src="/static/js/layui.js"></script>
+    <!-- 会使用最新版本，你最好指定一个版本 -->
+
+    <title> [[.title]]</title>
+
+</head>
+<body>
+    <div id="app">
+        <el-container class="common-layout">
+            <el-header>
+                [[ template "header.html" .]]
+            </el-header>
+
+            <el-container>
+                <el-side>
+                    [[ template "side.html" .]]
+                </el-side>
+
+              <el-container>
+                    <el-main>
+                        [[ template "content.html" .]]
+                    </el-main>
+
+                    <el-footer>
+                        [[ template "footer.html" .]]
+                    </el-footer>
+              </el-container>
+
+            </el-container>
+
+        </el-container>
+
+    </div>
+    <link href="/static/css/main.css" rel="stylesheet"/>
+    <script src="/static/js/main.js"></script>
+        </body>
+        </html>
